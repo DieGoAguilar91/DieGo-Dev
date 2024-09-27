@@ -1,0 +1,96 @@
+.fondo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.bubbles span img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: #4fdcdc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fdcdc44,
+        0 0 50px #18aacf,
+        0 0 100px #50d5e7;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+
+/* Colores de las burbujas VARIABLES DE USO V - F  */
+/* Morado */
+.bubbles span .v {
+    background: #4f51dc;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+        0 0 50px #1852cf,
+        0 0 100px #508ce7;
+}
+
+/* Azul */
+.bubbles span ._ {
+    background: #0960d1;
+    box-shadow: 0 0 0 10px #4f75dc44,
+        0 0 50px #1849cf,
+        0 0 100px #508ce7;
+}
+
+/* verde */
+.bubbles span .f {
+    background: #4fdc56;
+    box-shadow: 0 0 0 10px #4fdc7244,
+        0 0 50px #2dcf18,
+        0 0 100px #50e75d;
+}
+
+/* Naranja */
+.bubbles span ._ {
+    background: #ffea2d;
+    box-shadow: 0 0 0 10px #ffdf2d44,
+        0 0 50px #ffd82d,
+        0 0 100px #ffc72d;
+}
+
+/* Amarillo */
+.bubbles span ._ {
+    background: #eaff2d;
+    box-shadow: 0 0 0 10px #f1ff2d44,
+        0 0 50px #ffd82d,
+        0 0 100px #dfff2d;
+}
+
+/* Negro */
+.bubbles span ._ {
+    background: #000000;
+    box-shadow: 0 0 0 10px #0a0a0944,
+        0 0 50px #11110f,
+        0 0 100px #000000;
+}
+
+.bubbles span ._ {
+    background: #ff2d2d;
+    box-shadow: 0 0 0 10px #ff2d2d44,
+        0 0 50px #ff2d2d,
+        0 0 100px #ff2d2d;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1.5);
+    }
+
+}
